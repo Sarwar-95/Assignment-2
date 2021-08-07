@@ -1,0 +1,315 @@
+/*------------- Font Import----------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* --------all paragraph tags color--- */
+p{
+    color: #6C6C6C;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------------top section--------*/
+
+.top-part-container{
+    margin: 0;
+    width: 100%;
+    height: 550px;
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-heading{
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+
+/* making sure copa america stays on same line */
+
+.nowrap{
+    white-space: nowrap;
+}
+.featured-player img{
+    width: 556.01px;
+    height: 438px;
+}
+
+
+/*---------For all buttons---------*/
+
+.buttons{
+    background-color: #E02C6D;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px 10px 24px;
+}
+
+.buttons i{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/*----------Button Design End------*/
+
+
+/* ----Hover effects to image----- */
+
+.featured-player img:hover{
+    animation-name: flip;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+/* ------------Animatiom ----------*/
+
+@keyframes flip {
+    from {
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+}
+/* ---Hover effects to button--- */
+.buttons:hover{
+    box-shadow: 0px 0px 20px rgba(255, 85, 142, 0.904);
+    font-size: 1.1em;
+    transition: ease-in 0.1s;
+}
+
+/* ------------------------End --------------------*/
+
+
+.player:hover{
+    box-shadow: rgb(129, 129, 129) 0px 2px 8px 0px;
+    transform: scale(1.05);
+
+}
+
+/* -------------------player gallery------------ */
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.player-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+
+}
+.player{
+    width: 330px;
+    height: 474px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.player-img{
+    width: 90%;
+    padding: 15px;
+}
+
+/* Player Text */
+.player-name{
+    font-weight: 700;
+    font-size: 28px;
+}
+.player-name, p{
+    padding: 0 0 0 15px;
+    margin-top: -9px;
+}
+
+/* ------------------------End------------------------*/
+
+
+
+
+/* -----------------highlights section---------------- */
+
+.highlights-section{
+    margin-top: 150px;
+}
+.highlights-heading, .blogs-heading{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.highlights-container{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    margin-right: 70px;
+}
+
+/* ----------small adjustments using id------------ */
+
+#watch-now{
+    margin-left: 15px;
+}
+#para{
+    margin-bottom: 30px;
+}
+#watch-now:hover{
+    box-shadow: 0px 0px 20px rgba(255, 85, 142, 0.904);
+    font-size: 1.1em;
+    transition: ease-in 0.1s;
+}
+
+/* -------------------------End---------------------*/
+
+
+
+/* --------------------footer---------------------- */
+
+.the-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    row-gap: 20px;
+}
+
+/* ---------------------Icon---------------------*/
+.social-links{
+    color: #969BAB;
+    background: rgb(240, 239, 239);
+    border-radius:60px;
+    padding: 5px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+/* ----------------------Copyright------------- */
+
+.copyright{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.copyright p
+{
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* ------------------Media Queries------------ */
+
+/* -----------------Ipad------------- */
+
+@media screen and (max-width: 1024px){
+    section, div{
+        margin-left: 10px;
+    }
+    .top-heading{
+        font-size: 36px;
+        margin: 0;
+        padding-top: 100px;
+    }
+    .copa-america{
+        margin-left: 20px;
+    }
+
+    .top-part-container{
+        height: 700px;
+        display: block;
+
+    }
+    .featured-player img{
+        width: 350px;
+        height: 270px;
+        padding: 50px 0 0 10px;
+    }
+    .player-grid{
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlights-container{
+        flex-direction: column;
+    }
+    .highlights-container iframe{
+        margin-top: 40px;
+        width: 100%;
+        height: 450px;
+        padding: 5px;
+    }
+    table{
+        width: auto;
+    }
+    .ranking-container{
+        flex-direction: column;
+    }
+    .blog-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* ------------------ Mobile--------------- */
+@media screen and (max-width: 500px){
+    *{
+        margin: 0;
+    }
+    section, div{
+        margin-left: 10px;
+    }
+    .top-heading{
+        margin: 0;
+        padding-bottom: 30px;
+    }
+    .top-part-container{
+        display: block;
+    }
+    .player-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlights-container{
+        flex-direction: column;
+    }
+    .highlights-container iframe{
+        margin-top: 40px;
+        width: auto;
+        height: 200px;
+        padding: 5px;
+
+    }
+    .ranking-container{
+        flex-direction: column;
+    }
+
+    table{
+        width: auto;
+    }
+    .flag-name h3{
+        display: none;
+    }
+    .top-heading{
+        font-size: 36px;
+    }
+    .blog-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .the-end, .the-end img{
+        width: 100%;
+    }
+}
+
+/* -----------------End-----------------*/
